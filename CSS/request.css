@@ -11,6 +11,26 @@
   display: inline-block;
 }
 
+/*----------------------------INTRO------------------------------*/
+.intro {
+  background-color: #FFFFFF;
+  height: 100%;
+  width: calc(100% - 55%);
+  box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro img {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*----------------------------FORM------------------------------*/
 .request {
   position: relative;
@@ -39,18 +59,6 @@
 input.middle:focus {
   outline-width: 0;
 }
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-
-button {
-  cursor: pointer;
-}
-
 .kind-container label {
   font-weight: 300;
   color: #0181D3;
@@ -59,6 +67,13 @@ button {
 .kind-container h2 {
   font-size: 2em;
   color: #0181D3;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 .kind-check {
@@ -128,35 +143,66 @@ button {
 .request-but{
   display: flex;
   justify-content: space-between;
-  width: 72%;
+  width: 100%;
   position: absolute;
   bottom: 10%;
 }
-
+.request-but a{
+  cursor: pointer;
+  padding: 0 15%;
+}
+.request-but #back{
+  cursor: default;
+}
 .request-but a:hover{
   opacity: 0.6;
 }
 
-/*----------------------------INTRO------------------------------*/
-.intro {
-  background-color: #FFFFFF;
-  height: 100%;
-  width: calc(100% - 55%);
-  box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
+/*----------------------------ID------------------------------*/
+.id-container {
+  padding: 10% 15%;
 }
 
-.intro img {
-  position: absolute;
-  width: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.id-container label {
+  font-weight: 300;
+  color: #0181D3;
 }
 
+.id-container h2 {
+  font-size: 1.5em;
+  color: #0181D3;
+}
+
+.id-field{
+  display: block;
+  margin-top: 15%;
+  position: relative;
+}
+.id-field input{
+  width: 100%;
+  padding: 7.5px 0;
+  border-style: none;
+  border-bottom: 1px solid #0181D3;
+  box-sizing: border-box;
+  color: #014E82;
+}
+.id-field input:focus{
+  border-bottom: 1px solid #014E82;
+}
+.id-field input::-webkit-outer-spin-button,
+.id-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.id-nums{
+  display: flex;
+  justify-content: space-between;
+}
+.num{
+  width: 40%;
+}
+
+/*----------------------------QUERIES------------------------------*/
 @media screen and (max-width: 940px) {
   .request {
     max-width: 100%;

@@ -157,7 +157,7 @@ button{
     box-shadow: none;
   }
   .about {
-    height: 0%;
+    height: 100%;
     width: 100%;
     top: 100%;
   }

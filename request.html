@@ -21,7 +21,7 @@
 
       <div class="request">
 
-        <form class="request-kind" action="" method="post">
+        <form class="request-kind" method="post">
 
           <div class="kind-container">
 
@@ -29,27 +29,61 @@
 
             <div class="kind-check">
               <label class="container">Requisição interna (CVP-Braga)
-                <input type="checkbox" checked="checked" id="op1">
+                <input type="radio" name="check" value="0" id="op0">
                 <span class="checkmark"></span>
               </label>
               <br>
               <br>
               <label class="container">Individual
-                <input type="checkbox">
+                <input type="radio" name="check" value="1" id="op1">
                 <span class="checkmark"></span>
               </label>
               <br>
               <br>
               <label class="container">Agregado
-                <input type="checkbox">
+                <input type="radio" name="check" value="2" id="op2">
                 <span class="checkmark"></span>
               </label>
             </div>
 
-            <div class="request-but">
-              <a id="back" style="opacity:0.3"><img src="./img/back.svg" alt="back-arrow"></a>
-              <a href="#" id="next"><img src="./img/next.svg" alt="next-arrow"></a>
+          </div>
+
+
+          <div class="id-container" style="display:none">
+
+            <h2>Identificação do Beneficiário:</h2>
+
+            <div class="id-field">
+              <label for="name1">Nome do/a técnico/a de referência:</label>
+              <br>
+              <input id="name1" type="text" name="name1" required>
             </div>
+
+            <div class="id-field">
+              <label for="name2">Nome do/a beneficiário/a titular:</label>
+              <br>
+              <input type="text" name="name2" required>
+            </div>
+
+            <div class="id-nums">
+              <div class="id-field num">
+                <label for="cc">Nº do CC:</label>
+                <br>
+                <input type="number" name="cc" required>
+              </div>
+              <div class="id-field num">
+                <label for="phone">Nº de telefone:</label>
+                <br>
+                <input type="number" name="phone" required>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="request-but">
+            <a id="back" style="opacity:0.3"><img src="./img/back.svg" alt="back-arrow"></a>
+            <a id="next" onclick="submition()"><img src="./img/next.svg" alt="next-arrow"></a>
           </div>
         </form>
       </div>
@@ -57,7 +91,7 @@
     </section>
 
   </main>
-
+  <script src="js/request.js"></script>
 </body>
 
 </html>

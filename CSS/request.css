@@ -31,6 +31,13 @@
   transform: translate(-50%, -50%);
 }
 
+#leave {
+  position: absolute;
+  z-index: 10;
+  bottom: 4%;
+  left: 2%;
+}
+
 /*----------------------------FORM------------------------------*/
 .request {
   position: relative;
@@ -150,6 +157,9 @@ button:focus {
 .request-but a{
   cursor: pointer;
   padding: 0 15%;
+}
+.request-but button{
+  cursor: pointer;
 }
 .request-but #back{
   cursor: default;

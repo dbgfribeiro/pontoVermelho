@@ -19,9 +19,11 @@
         <a href="index.html"><img src="./img/logo.png" alt="logo-ponto-vermelho"></a>
       </div>
 
+      <a href="index.html" id="leave">Sair</a>
+
       <div class="request">
 
-        <form class="request-kind" method="post">
+        <form class="request-kind" method="post" action="clothing.html">
 
           <div class="kind-container">
 
@@ -29,19 +31,19 @@
 
             <div class="kind-check">
               <label class="container">Requisição interna (CVP-Braga)
-                <input type="radio" name="check" value="0" id="op0">
+                <input type="radio" name="check" value="0" id="op0" onclick="option()">
                 <span class="checkmark"></span>
               </label>
               <br>
               <br>
               <label class="container">Individual
-                <input type="radio" name="check" value="1" id="op1">
+                <input type="radio" name="check" value="1" id="op1" onclick="option2()">
                 <span class="checkmark"></span>
               </label>
               <br>
               <br>
               <label class="container">Agregado
-                <input type="radio" name="check" value="2" id="op2">
+                <input type="radio" name="check" value="2" id="op2" onclick="option2()">
                 <span class="checkmark"></span>
               </label>
             </div>
@@ -84,7 +86,9 @@
           <div class="request-but">
             <a id="back" style="opacity:0.3"><img src="./img/back.svg" alt="back-arrow"></a>
             <a id="next" onclick="submition()"><img src="./img/next.svg" alt="next-arrow"></a>
+            <a id="sub" style="display:none"><button type="submit" name="button"><img src="./img/next.svg" alt="next-arrow"></button></a>
           </div>
+
         </form>
       </div>
 

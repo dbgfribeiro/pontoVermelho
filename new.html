@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, height=device-height" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/new.css">
+  <title>Ponto Vermelho</title>
+</head>
+
+<body>
+  <main>
+    <section id="home">
+
+      <div class="create-account">
+
+        <form class="create-account-form" action="request.html" method="post">
+
+          <div class="form-container">
+            <div class="form-img">
+              <a href="index.html"><img src="./img/logo.png" alt="logo-ponto-vermelho"></a>
+            </div>
+
+            <div class="form-line">
+              <div class="form-field">
+                <label for="name">Nome da equipa/serviço:</label>
+                <br>
+                <input type="name" name="name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="institution">Instituição:</label>
+                <br>
+                <input type="name" name="iinstitution" required>
+              </div>
+            </div>
+
+            <div class="form-line">
+              <div class="form-field public">
+                <label for="public">Público-alvo:</label>
+                <br>
+                <select name="public" id="public">
+                  <option value="0">População sem-abrigo</option>
+                  <option value="1">Beneficiários do Rendimento Social de Inserção</option>
+                  <option value="2">Grávidas em situação de risco</option>
+                  <option value="3">Vítimas de violência doméstica</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="public-kind">Outro:</label>
+                <br>
+                <input type="name" name="public-kind" required>
+              </div>
+            </div>
+
+            <div class="form-line">
+              <div class="form-field">
+                <label for="area">Área geográfica de abrangência:</label>
+                <br>
+                <input type="name" name="area" required>
+              </div>
+
+              <div class="form-field">
+                <label for="contact">Contacto telefónico:</label>
+                <br>
+                <input type="number" name="contact" required>
+              </div>
+            </div>
+
+            <div class="form-line">
+              <div class="form-field">
+                <label for="mail">E-mail:</label>
+                <br>
+                <input type="email" name="mail" required>
+              </div>
+
+              <div class="form-field">
+                <label for="pass">Password:</label>
+                <br>
+                <input type="password" name="pass" required>
+              </div>
+            </div>
+
+
+            <div class="form-but">
+              <button type="submit">Criar conta</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

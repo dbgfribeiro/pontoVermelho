@@ -160,6 +160,8 @@ button:focus {
 }
 .request-but button{
   cursor: pointer;
+  background-color: transparent;
+  border-style: none;
 }
 .request-but #back{
   cursor: default;

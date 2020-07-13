@@ -16,10 +16,81 @@
   <main>
     <section id="home">
 
-      <div class="request">
+      <div class="intro">
+        <a href="index.html"><img src="./img/logo.png" alt="logo-ponto-vermelho"></a>
+      </div>
 
-        <form class="clothing-request">
+      <a href="index.html" id="leave">Sair</a>
 
+      <div class="clothing">
+
+        <form class="clothing-request" method="post" action="">
+
+
+          <div class="clothing-container">
+
+            <h2>Pedido:</h2>
+
+            <div class="clothing-line">
+
+              <div class="clothing-field">
+                <label for="description">Descrição do Produto:</label>
+                <br>
+                <select name="description" id="description">
+                  <option value="pants">Calças</option>
+                  <option value="shorts">Calções</option>
+                  <option value="skirts">Saias</option>
+                  <option value="sports-pants">Calças desportivas</option>
+                </select>
+              </div>
+
+              <div class="clothing-field">
+                <label for="quantity">Quantidade:</label>
+                <br>
+                <select name="quantity" id="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="clothing-line">
+
+              <div class="clothing-field">
+                <label for="size">Tamanhos (adulto):</label>
+                <br>
+                <select name="size" id="size">
+                  <option value="pants">Calças</option>
+                  <option value="shorts">Calções</option>
+                  <option value="skirts">Saias</option>
+                  <option value="sports-pants">Calças desportivas</option>
+                </select>
+              </div>
+
+              <div class="clothing-field">
+                <label for="size-kid">Tamanhos (criança):</label>
+                <br>
+                <select name="size-kid" id="size-kid">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">2</option>
+                  <option value="4">3</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="clothing-but">
+            <a id="back" style="opacity:0.3"><img src="./img/back.svg" alt="back-arrow"></a>
+            <a id="next" onclick="submition()"><img src="./img/next.svg" alt="next-arrow"></a>
+            <a id="sub" style="display:none"><button type="submit" name="button"><img src="./img/next.svg" alt="next-arrow"></button></a>
+          </div>
 
         </form>
       </div>

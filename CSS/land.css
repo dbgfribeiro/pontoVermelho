@@ -27,6 +27,11 @@ nav #portal {
   position: fixed;
   right: 0;
   z-index: 10;
+  transition: 0.4s;
+}
+nav #portal:hover {
+  transform: scale(1.02,1.02);
+  background-color: rgba(1, 129, 211, 0.8);
 }
 
 @media only screen and (max-width: 880px) {
@@ -38,6 +43,7 @@ nav #portal {
 @media only screen and (max-width: 550px) {
   nav #portal {
     font-size: 12px;
+    padding: 1% 4%;
   }
 }
 
@@ -67,6 +73,7 @@ nav #portal {
   height: 45%;
   box-shadow: -10px 10px #0181D3;
   margin-top: -2%;
+  border-radius: 15px;
 }
 
 .about-info {
@@ -108,7 +115,7 @@ nav #portal {
   }
 
   .about-info h1 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .about-info {
@@ -239,8 +246,13 @@ a.mapboxgl-ctrl-logo {
 .map {
   width: 460px;
   height: 315px;
+  border-radius: 15px;
+  transition: 0.3s;
 }
-
+.map:hover{
+  transform: scale(1.015,1.015);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
 .help-info {
   margin-left: 4%;
   color: #014E82;
@@ -269,6 +281,7 @@ a.mapboxgl-ctrl-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 15px;
 }
 
 .volunteer-info {
@@ -281,7 +294,11 @@ a.mapboxgl-ctrl-logo {
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1,1);
+  transition: 0.3s;
+}
+.volunteer-info:hover{
+  transform: translate(-50%, -50%) scale(1.03,1.03);
 }
 .volunteer-info h2 {
   color: #014E82;
@@ -330,7 +347,7 @@ a.mapboxgl-ctrl-logo {
 
   #help h1 {
     padding-top: 10%;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .map {
@@ -338,7 +355,9 @@ a.mapboxgl-ctrl-logo {
     height: 215px;
     width: 100%;
   }
-
+  .help-map:nth-child(2) {
+    margin-top: 10%;
+  }
   .help-info {
     margin: 4% 0;
   }
@@ -352,12 +371,46 @@ a.mapboxgl-ctrl-logo {
   }
 
   .help-map {
-    margin-top: 10%;
+    margin-top: 6%;
+  }
+  .volunteer {
+    height: 62vh;
+  }
+  .volunteer-info {
+    padding: 4%;
+    width: 70%;
+    font-size: 14px;
   }
 }
 
 /*----------------------------FOOTER------------------------------*/
 footer {
-  height: 200px;
-  background-color: #014E82;
+  background-color: #0181D3;
+  padding: 5% 0;
+}
+footer .social{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5px solid #FFFFFF;
+  width: 80%;
+  margin: 0 auto;
+}
+.social a{
+  transition: 0.3s;
+  margin-bottom: 2%;
+}
+.social a:hover{
+  transform: scale(1.08,1.08);
+}
+.copyright{
+  float: right;
+  text-align: right;
+  margin-right: 10%;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+@media only screen and (max-width: 550px) {
+  .copyright{
+    font-size: 12px;
+  }
 }

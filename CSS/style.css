@@ -96,7 +96,7 @@ button{
   border-style: none;
   margin-top: 7.5%;
   width: 100%;
-  padding: 15px 0;
+  padding: 6% 0;
   transition: 0.3s;
 
 }
@@ -170,5 +170,17 @@ button{
 @media screen and (max-width: 600px) {
   #home{
     height: 90vh;
+  }
+  .about-text h1{
+    font-size: 1.5em;
+  }
+  .about-text p{
+    margin-top: 2%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about {
+    height: 120vh;
   }
 }

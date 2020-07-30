@@ -27,12 +27,26 @@
 
   <main>
     <section id="intro">
-      <h1>LOREM IPSUM.</h1>
+      <h1 id="quote">GOOD FOR THE POCKET</h1>
     </section>
 
-    <section id="about">
+    <script>
+      var text = ["GOOD FOR THE POCKET", "GOOD FOR THE PLANET", "GOOD FOR THE PEOPLE"];
+      var counter = 1;
+      var elem = document.getElementById("quote");
+      var inst = setInterval(change, 1000);
 
-      <div class="about-container" data-aos="fade-up">
+      function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+          counter = 0;
+        }
+      }
+    </script>
+
+    <section id="about" data-aos="fade-up">
+      <div class="about-container">
 
           <img src="./img/cvp_braga1.jpg">
 
@@ -42,7 +56,11 @@
             socioeconómica do concelho de Braga e através de vendas a preços simbólicos ao público em geral.<br><br> Na nossa loja pode encontrar: roupa de adulto e criança, calçado, artigos para o bebé, brinquedos, livros e têxteis-lar.</p>
         </div>
       </div>
+    </section>
 
+
+
+    <section id="compare">
       <div class="accordion-container">
         <div class="accordion" data-aos="fade-right">
           <section class="accordion-item">
@@ -71,8 +89,9 @@
       </div>
 
       </div>
-
     </section>
+
+
 
     <section id="help" data-aos="fade-up">
       <h1>Como nos pode ajudar?</h1>
@@ -125,7 +144,7 @@
         </div>
       </div>
 
-      <div class="volunteer" data-aos="zoom-in-up">
+      <div class="volunteer" data-aos="fade-up">
         <div class="volunteer-info">
           <h2>Torne-se voluntário:</h2>
           <p>o Ponto Vermelho apenas é possível graças aos seus voluntários, que colaboram em toda a logística e atendimento ao público. Se quiser fazer voluntariado connosco, consulte as informações em:</p>

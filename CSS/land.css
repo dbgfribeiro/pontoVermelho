@@ -5,6 +5,7 @@
 }
 
 nav {
+  position: absolute;
   display: flex;
 }
 
@@ -29,8 +30,9 @@ nav #portal {
   z-index: 10;
   transition: 0.4s;
 }
+
 nav #portal:hover {
-  transform: scale(1.02,1.02);
+  transform: scale(1.02, 1.02);
   background-color: rgba(1, 129, 211, 0.8);
 }
 
@@ -62,9 +64,17 @@ nav #portal:hover {
 }
 
 /*----------------------------ABOUT------------------------------*/
+#about {
+  display: block;
+  width: 98%;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgba(1, 129, 211, 0.1);
+}
+
 .about-container {
   display: flex;
-  padding: 0 10%;
+  padding: 6% 10%;
   position: relative;
 }
 
@@ -72,7 +82,6 @@ nav #portal:hover {
   width: 45%;
   height: 45%;
   box-shadow: -10px 10px #0181D3;
-  margin-top: -2%;
   border-radius: 15px;
 }
 
@@ -93,7 +102,7 @@ nav #portal:hover {
 @media only screen and (max-width: 880px) {
   .about-container {
     display: block;
-    padding: 0;
+    padding: 6% 0;
   }
 
   .about-container img {
@@ -190,6 +199,10 @@ nav #portal:hover {
 }
 
 @media only screen and (max-width: 550px) {
+  .accordion-container {
+    margin-top: 14%;
+  }
+
   .accordion h1 {
     font-size: 1em;
   }
@@ -249,10 +262,12 @@ a.mapboxgl-ctrl-logo {
   border-radius: 15px;
   transition: 0.3s;
 }
-.map:hover{
-  transform: scale(1.015,1.015);
+
+.map:hover {
+  transform: scale(1.015, 1.015);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .help-info {
   margin-left: 4%;
   color: #014E82;
@@ -294,25 +309,30 @@ a.mapboxgl-ctrl-logo {
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1,1);
+  transform: translate(-50%, -50%) scale(1, 1);
   transition: 0.3s;
 }
-.volunteer-info:hover{
-  transform: translate(-50%, -50%) scale(1.03,1.03);
+
+.volunteer-info:hover {
+  transform: translate(-50%, -50%) scale(1.03, 1.03);
 }
+
 .volunteer-info h2 {
   color: #014E82;
   font-size: 1em;
 }
+
 .volunteer-info p {
   margin-top: 2%;
   color: #014E82;
 }
+
 .volunteer-info a {
   text-decoration: none;
   color: #0181D3;
   transition: 0.7s;
 }
+
 .volunteer-info a:hover {
   opacity: 0.5;
 }
@@ -321,20 +341,25 @@ a.mapboxgl-ctrl-logo {
   .web {
     display: none;
   }
+
   .mobile {
     display: block;
   }
+
   .help-element {
     margin-top: 4%;
     display: block;
   }
+
   .help-map {
     margin-right: 0;
   }
+
   .help-info {
     margin-left: 0;
     margin-top: 2%;
   }
+
   .help-map:nth-child(2) {
     margin-left: 0;
   }
@@ -355,9 +380,11 @@ a.mapboxgl-ctrl-logo {
     height: 215px;
     width: 100%;
   }
+
   .help-map:nth-child(2) {
     margin-top: 10%;
   }
+
   .help-info {
     margin: 4% 0;
   }
@@ -373,9 +400,11 @@ a.mapboxgl-ctrl-logo {
   .help-map {
     margin-top: 6%;
   }
+
   .volunteer {
     height: 62vh;
   }
+
   .volunteer-info {
     padding: 4%;
     width: 70%;
@@ -388,29 +417,34 @@ footer {
   background-color: #0181D3;
   padding: 5% 0;
 }
-footer .social{
+
+footer .social {
   display: flex;
   justify-content: center;
   border-bottom: 1.5px solid #FFFFFF;
   width: 80%;
   margin: 0 auto;
 }
-.social a{
+
+.social a {
   transition: 0.3s;
   margin-bottom: 2%;
 }
-.social a:hover{
-  transform: scale(1.08,1.08);
+
+.social a:hover {
+  transform: scale(1.08, 1.08);
 }
-.copyright{
+
+.copyright {
   float: right;
   text-align: right;
   margin-right: 10%;
   color: #FFFFFF;
   font-size: 14px;
 }
+
 @media only screen and (max-width: 550px) {
-  .copyright{
+  .copyright {
     font-size: 12px;
   }
 }

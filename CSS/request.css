@@ -156,7 +156,7 @@ button:focus {
 }
 .request-but a{
   cursor: pointer;
-  padding: 0 15%;
+  margin: 0 15%;
 }
 .request-but button{
   cursor: pointer;
@@ -169,7 +169,14 @@ button:focus {
 .request-but a:hover{
   opacity: 0.6;
 }
-
+@media screen and (max-width: 600px) {
+  .kind-container h2 {
+    font-size: 1.2em;
+  }
+  .kind-container label {
+    font-size: 12px;
+  }
+}
 /*----------------------------ID------------------------------*/
 .id-container {
   padding: 10% 15%;
@@ -212,6 +219,14 @@ button:focus {
 }
 .num{
   width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .id-container h2 {
+    font-size: 1em;
+  }
+  .id-container label {
+    font-size: 12px;
+  }
 }
 
 /*----------------------------QUERIES------------------------------*/

@@ -157,20 +157,17 @@ button{
     box-shadow: none;
   }
   .about {
-    height: 100%;
     width: 100%;
     top: 100%;
+    height: auto;
   }
-  .about-text{
-    position: absolute;
+  .about-text {
+    position: relative;
     top: 0;
     padding: 10%;
   }
 }
 @media screen and (max-width: 600px) {
-  #home{
-    height: 90vh;
-  }
   .about-text h1{
     font-size: 1.5em;
   }

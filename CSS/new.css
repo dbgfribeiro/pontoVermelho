@@ -10,6 +10,20 @@
   height: 100vh;
   display: inline-block;
 }
+.action-icons{
+  position: absolute;
+  display: flex;
+  width: 3%;
+  z-index: 10;
+  right: 2.5%;
+  top: 6.5%;
+}
+.action-icons img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
 
 
 /*----------------------------FORM------------------------------*/
@@ -110,17 +124,46 @@ button{
 .form-but button[type="submit"]:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 940px) {
+
+@media screen and (max-width: 800px) {
   #home{
     position: relative;
+    height: auto;
+  }
+  .action-icons{
+    width: 5%;
+    z-index: 10;
+    right: 2%;
+    top: 1.5%;
   }
   .create-account{
-    background-color: #FFF;
-    box-shadow: none;
+    padding: 10% 0;
+  }
+  .create-account-form {
+    width: 85%;
+    height: auto;
+    padding-bottom: 10%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    display: block;
+    margin: 0 auto;
+  }
+  .form-container{
+    padding: 0 10%;
+  }
+  .form-field{
+    margin: 5% 0;
+  }
+  .form-line{
+    display: block;
+  }
+  .form-img img{
+    padding: 17% 0 10% 0;
+    width: 75%;
   }
 }
+
 @media screen and (max-width: 600px) {
-  #home{
-    height: 90vh;
-  }
 }

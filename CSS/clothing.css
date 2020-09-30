@@ -31,11 +31,22 @@
   transform: translate(-50%, -50%);
 }
 
-#leave {
+.action-icons{
   position: absolute;
+  display: flex;
+  width: 7.5%;
   z-index: 10;
-  bottom: 4%;
-  left: 2%;
+  left: 2.5%;
+  bottom: 2.5%;
+}
+.action-icons a{
+  padding: 9%;
+}
+.action-icons img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 /*----------------------------FORM------------------------------*/
@@ -133,7 +144,10 @@ button:focus {
 
 /*----------------------------QUERIES------------------------------*/
 @media screen and (max-width: 940px) {
-  .request {
+  .action-icons{
+    display: none;
+  }
+  .clothing {
     max-width: 100%;
     margin-left: 0;
   }
@@ -144,4 +158,48 @@ button:focus {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+  #home{
+    position: relative;
+    height: auto;
+  }
+  .clothing{
+    padding: 10% 0;
+    min-height: 700px;
+  }
+  .clothing-request{
+    width: 85%;
+    height: auto;
+    padding-bottom: 30%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    display: block;
+    margin: 0 auto;
+  }
+  .clothing-container{
+    padding: 0 10%;
+  }
+  .clothing-container h2 {
+    font-size: 2.5em;
+    padding: 10% 0 5% 0;
+    text-align: center;
+  }
+  .clothing-field{
+    margin: 5% 0;
+  }
+  .clothing-line{
+    display: block;
+  }
+  .clothing-field select[name="description"]{
+    width: 100%;
+  }
+  .clothing-field select[name="quantity"]{
+    width: 100%;
+  }
+  .clothing-but{
+    bottom: 5%;
+  }
+  
+}

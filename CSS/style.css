@@ -11,7 +11,6 @@
   display: inline-block;
 }
 
-
 /*----------------------------FORM------------------------------*/
 .log-in {
   position: relative;
@@ -34,39 +33,47 @@
   height: 85%;
 }
 
-.form-container{
+.form-container {
   padding: 20% 15%;
 }
+
 input.middle:focus {
-    outline-width: 0;
+  outline-width: 0;
 }
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
-button{
+
+button {
   cursor: pointer;
 }
-.form-container label{
+
+.form-container label {
   font-size: 12px;
   font-weight: 300;
   color: #0181D3;
   transition: 0.3s;
 }
-.form-img{
+
+.form-img {
   text-align: center;
 }
-.form-img img{
+
+.form-img img {
   width: 60%;
 }
-.form-field{
+
+.form-field {
   display: block;
   margin-top: 15%;
   position: relative;
 }
-.form-field input{
+
+.form-field input {
   width: 100%;
   padding: 7.5px 0;
   display: inline-block;
@@ -76,45 +83,52 @@ button{
   color: #014E82;
   transition: 0.3s;
 }
-.form-field input:hover{
+
+.form-field input:hover {
   border-bottom: 1px solid #014E82;
-  transform: scale(1.02,1.2);
+  transform: scale(1.02, 1.2);
 }
-.form-field:hover label{
+
+.form-field:hover label {
   color: #014E82;
   font-weight: 600;
 }
-.form-field input:focus{
+
+.form-field input:focus {
   border-bottom: 1px solid #014E82;
 }
 
-.form-check{
+.form-check {
   margin-top: 10%;
 }
-.form-but button{
+
+.form-but button {
   border-radius: 100px;
   border-style: none;
   margin-top: 7.5%;
   width: 100%;
   padding: 6% 0;
   transition: 0.3s;
-
 }
-.form-but button[type="submit"]{
+
+.form-but button[type="submit"] {
   background: #0181D3;
   color: #FFFFFF;
 }
+
 .form-but button[type="submit"]:hover {
   opacity: 0.8;
 }
-.form-but button[type="button"]{
+
+.form-but button[type="button"] {
   background: #FFFFFF;
   border: 1px solid #0181D3;
   box-sizing: border-box;
   border-radius: 100px;
   color: #0181D3;
 }
-.form-but button[type="button"]:hover{
+
+.form-but button[type="button"]:hover {
   background: #EEEEEE;
 }
 
@@ -127,55 +141,67 @@ button{
   top: 0;
   right: 0;
 }
-.about-text{
+
+.about-text {
   position: absolute;
   padding: 0 12% 0 6%;
   bottom: 8%;
 }
-.about-text h1{
+
+.about-text h1 {
   color: #FFFFFF;
   font-size: 3em;
 }
-.about-text p{
+
+.about-text p {
   color: #FFFFFF;
   font-size: 14px;
 }
-.about-text a{
+
+.about-text a {
   color: #014E82;
   text-decoration: none;
   cursor: pointer;
 }
-.about-text a:hover{
+
+.about-text a:hover {
   opacity: 0.6;
 }
+
 @media screen and (max-width: 940px) {
-  #home{
+  #home {
     position: relative;
   }
-  .log-in{
+
+  .log-in {
     background-color: #FFF;
     box-shadow: none;
   }
+
   .about {
     width: 100%;
     top: 100%;
     height: auto;
   }
+
   .about-text {
     position: relative;
     top: 0;
     padding: 10%;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .about-text h1{
+  .about-text h1 {
     font-size: 1.5em;
   }
-  .about-text p{
+
+  .about-text p {
     margin-top: 2%;
     font-size: 12px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .about {
     height: 120vh;

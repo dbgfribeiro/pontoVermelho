@@ -11,7 +11,7 @@
   display: inline-block;
 }
 
-.action-icons{
+.action-icons {
   position: absolute;
   display: flex;
   width: 7.5%;
@@ -19,10 +19,12 @@
   left: 2.5%;
   bottom: 2.5%;
 }
-.action-icons a{
+
+.action-icons a {
   padding: 9%;
 }
-.action-icons img{
+
+.action-icons img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -84,6 +86,7 @@
 input.middle:focus {
   outline-width: 0;
 }
+
 .kind-container label {
   font-weight: 300;
   color: #0181D3;
@@ -165,36 +168,44 @@ button:focus {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.request-but{
+
+.request-but {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: absolute;
   bottom: 10%;
 }
-.request-but a{
+
+.request-but a {
   cursor: pointer;
   margin: 0 15%;
 }
-.request-but button{
+
+.request-but button {
   cursor: pointer;
   background-color: transparent;
   border-style: none;
 }
-.request-but #back{
+
+.request-but #back {
   cursor: default;
 }
-.request-but a:hover{
+
+.request-but a:hover {
   opacity: 0.6;
 }
+
 @media screen and (max-width: 600px) {
   .kind-container h2 {
     font-size: 1.2em;
   }
+
   .kind-container label {
     font-size: 12px;
   }
 }
+
 /*----------------------------ID------------------------------*/
 .id-container {
   padding: 10% 15%;
@@ -210,12 +221,13 @@ button:focus {
   color: #0181D3;
 }
 
-.id-field{
+.id-field {
   display: block;
   margin-top: 15%;
   position: relative;
 }
-.id-field input{
+
+.id-field input {
   width: 100%;
   padding: 7.5px 0;
   border-style: none;
@@ -223,25 +235,31 @@ button:focus {
   box-sizing: border-box;
   color: #014E82;
 }
-.id-field input:focus{
+
+.id-field input:focus {
   border-bottom: 1px solid #014E82;
 }
+
 .id-field input::-webkit-outer-spin-button,
 .id-field input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.id-nums{
+
+.id-nums {
   display: flex;
   justify-content: space-between;
 }
-.num{
+
+.num {
   width: 40%;
 }
+
 @media screen and (max-width: 600px) {
   .id-container h2 {
     font-size: 1em;
   }
+
   .id-container label {
     font-size: 12px;
   }
@@ -253,11 +271,14 @@ button:focus {
     max-width: 100%;
     margin-left: 0;
   }
+
   .form-check {
     margin-top: 25%;
   }
+
   .intro {
     display: none;
   }
 }
+
 @media screen and (max-width: 600px) {}

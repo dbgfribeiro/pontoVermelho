@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%);
 }
 
-.action-icons{
+.action-icons {
   position: absolute;
   display: flex;
   width: 7.5%;
@@ -39,10 +39,12 @@
   left: 2.5%;
   bottom: 2.5%;
 }
-.action-icons a{
+
+.action-icons a {
   padding: 9%;
 }
-.action-icons img{
+
+.action-icons img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -81,26 +83,30 @@ button:focus {
   outline: none;
 }
 
-.clothing-but{
+.clothing-but {
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: absolute;
   bottom: 10%;
 }
-.clothing-but a{
+
+.clothing-but a {
   cursor: pointer;
   padding: 0 15%;
 }
-.clothing-but button{
+
+.clothing-but button {
   cursor: pointer;
   background-color: transparent;
   border-style: none;
 }
-.clothing-but #back{
+
+.clothing-but #back {
   cursor: default;
 }
-.clothing-but a:hover{
+
+.clothing-but a:hover {
   opacity: 0.6;
 }
 
@@ -118,16 +124,19 @@ button:focus {
   font-size: 2em;
   color: #0181D3;
 }
-.clothing-line{
+
+.clothing-line {
   display: flex;
   justify-content: space-between;
 }
-.clothing-field{
+
+.clothing-field {
   display: block;
   margin-top: 15%;
   position: relative;
 }
-.clothing-field select{
+
+.clothing-field select {
   width: 100%;
   padding: 7.5px 0;
   border-style: none;
@@ -135,39 +144,47 @@ button:focus {
   box-sizing: border-box;
   color: #014E82;
 }
-.clothing-field select[name="description"]{
+
+.clothing-field select[name="description"] {
   width: 160%;
 }
-.clothing-field select[name="quantity"]{
+
+.clothing-field select[name="quantity"] {
   width: 80%;
 }
 
 /*----------------------------QUERIES------------------------------*/
 @media screen and (max-width: 940px) {
-  .action-icons{
+  .action-icons {
     display: none;
   }
+
   .clothing {
     max-width: 100%;
     margin-left: 0;
   }
+
   .form-check {
     margin-top: 25%;
   }
+
   .intro {
     display: none;
   }
 }
+
 @media screen and (max-width: 600px) {
-  #home{
+  #home {
     position: relative;
     height: auto;
   }
-  .clothing{
+
+  .clothing {
     padding: 10% 0;
     min-height: 700px;
   }
-  .clothing-request{
+
+  .clothing-request {
     width: 85%;
     height: auto;
     padding-bottom: 30%;
@@ -178,28 +195,34 @@ button:focus {
     display: block;
     margin: 0 auto;
   }
-  .clothing-container{
+
+  .clothing-container {
     padding: 0 10%;
   }
+
   .clothing-container h2 {
     font-size: 2.5em;
     padding: 10% 0 5% 0;
     text-align: center;
   }
-  .clothing-field{
+
+  .clothing-field {
     margin: 5% 0;
   }
-  .clothing-line{
+
+  .clothing-line {
     display: block;
   }
-  .clothing-field select[name="description"]{
+
+  .clothing-field select[name="description"] {
     width: 100%;
   }
-  .clothing-field select[name="quantity"]{
+
+  .clothing-field select[name="quantity"] {
     width: 100%;
   }
-  .clothing-but{
+
+  .clothing-but {
     bottom: 5%;
   }
-  
 }

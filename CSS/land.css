@@ -8,20 +8,25 @@ nav {
   position: absolute;
   display: flex;
 }
-nav #portal{
+
+nav #portal {
   margin: 2.5%;
 }
-nav .logos{
+
+nav .logos {
   width: 42%;
   display: flex;
   margin: 2%;
 }
-.logos a{
+
+.logos a {
   padding: 5%;
 }
+
 .logos img {
   width: 100%;
 }
+
 .logos :nth-child(2) {
   margin-top: -13%;
   width: 260%;
@@ -68,8 +73,8 @@ nav #portal:hover {
 }
 
 @media only screen and (max-width: 550px) {
-  #intro{
-  }
+  #intro {}
+
   #intro h1 {
     padding: 30% 0 20% 0;
     font-size: 2em;

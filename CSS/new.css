@@ -10,7 +10,8 @@
   height: 100vh;
   display: inline-block;
 }
-.action-icons{
+
+.action-icons {
   position: absolute;
   display: flex;
   width: 3%;
@@ -18,16 +19,16 @@
   right: 2.5%;
   top: 6.5%;
 }
-.action-icons img{
+
+.action-icons img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
 
-
 /*----------------------------FORM------------------------------*/
-.create-account{
+.create-account {
   position: relative;
   width: 100%;
   height: 100%;
@@ -48,44 +49,53 @@
   height: 85%;
 }
 
-.form-container{
+.form-container {
   padding: 0 15%;
 }
+
 input.middle:focus {
-    outline-width: 0;
+  outline-width: 0;
 }
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
-button{
+
+button {
   cursor: pointer;
 }
-.form-container label{
+
+.form-container label {
   font-size: 12px;
   font-weight: 300;
   color: #0181D3;
   transition: 0.3s;
 }
-.form-img{
+
+.form-img {
   text-align: center;
 }
-.form-img img{
+
+.form-img img {
   padding: 7% 0 4% 0;
   width: 30%;
 }
-.form-line{
+
+.form-line {
   display: flex;
   justify-content: space-between;
 }
-.form-field{
+
+.form-field {
   width: 100%;
   display: block;
   margin: 2% 5%;
   position: relative;
 }
+
 .form-field input, .form-field select {
   width: 100%;
   padding: 7.5px 0;
@@ -96,49 +106,56 @@ button{
   color: #014E82;
   transition: 0.3s;
 }
-.form-field input:hover{
+
+.form-field input:hover {
   border-bottom: 1px solid #014E82;
-  transform: scale(1.02,1.2);
+  transform: scale(1.02, 1.2);
 }
-.form-field:hover label{
+
+.form-field:hover label {
   color: #014E82;
   font-weight: 600;
 }
-.form-field input:focus{
+
+.form-field input:focus {
   border-bottom: 1px solid #014E82;
 }
 
-.form-but button{
+.form-but button {
   border-radius: 100px;
   border-style: none;
   margin-top: 5%;
   width: 100%;
   padding: 15px 0;
   transition: 0.3s;
-
 }
-.form-but button[type="submit"]{
+
+.form-but button[type="submit"] {
   background: #0181D3;
   color: #FFFFFF;
 }
+
 .form-but button[type="submit"]:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 800px) {
-  #home{
+  #home {
     position: relative;
     height: auto;
   }
-  .action-icons{
+
+  .action-icons {
     width: 5%;
     z-index: 10;
     right: 2%;
     top: 1.5%;
   }
-  .create-account{
+
+  .create-account {
     padding: 10% 0;
   }
+
   .create-account-form {
     width: 85%;
     height: auto;
@@ -150,20 +167,23 @@ button{
     display: block;
     margin: 0 auto;
   }
-  .form-container{
+
+  .form-container {
     padding: 0 10%;
   }
-  .form-field{
+
+  .form-field {
     margin: 5% 0;
   }
-  .form-line{
+
+  .form-line {
     display: block;
   }
-  .form-img img{
+
+  .form-img img {
     padding: 17% 0 10% 0;
     width: 75%;
   }
 }
 
-@media screen and (max-width: 600px) {
-}
+@media screen and (max-width: 600px) {}
